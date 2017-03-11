@@ -1,11 +1,11 @@
 const fontSize = 50;
-const text = 'Hey there...   isn\'t this a nice text scroller? ...   made in JavaScript...  code by panicrun...   PS: Fuck Trump...  \u2764 \u2764 \u2764';
-const screenWidth = document.body.clientWidth || 1000;
-const screenHeight = document.body.clientHeight || 800;
+const text = 'Hey there...   isn\'t this a nice text scroller? ...   made in JavaScript...   PS: Fuck Trump...  \u2764 \u2764 \u2764';
+let screenWidth = document.body.clientWidth || 1000;
+let screenHeight = document.body.clientHeight || 800;
 
 const wavePeriod = screenWidth / 2;
 const scrollSpeed = 1 / 4;
-const amplitude = 200;
+const amplitude = screenHeight / 8;
 const offsetY = amplitude + (screenHeight / 2);
 const offsetAlphaPerCharacter = 0.1 * Math.PI;
 const offsetXPerCharacter = fontSize;
@@ -51,6 +51,14 @@ function step(timestamp) {
     sprite.style.top = `${y + offsetY}px`;
     sprite.style.color = color;
   });
+  window.requestAnimationFrame(step);
+}
+
+function updateScreenSize() {
+  screenHeight = document.body.clientHeight || 800;
+  screenWidth = document.body.clientWidth || 1000;
+
+  start = null;
   window.requestAnimationFrame(step);
 }
 
