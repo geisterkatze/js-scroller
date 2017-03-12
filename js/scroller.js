@@ -1,5 +1,5 @@
 const fontSize = 50;
-const text = 'Hey there...   isn\'t this a nice text scroller? ...   made in JavaScript...   PS: Fuck Trump...  \u2764 \u2764 \u2764';
+const text = 'Hey there...  Greeting   aburrideitor...    mouldycat...   frau angst...   hypo...   zproc...   codazzo...   rut...   isn\'t this a nice javascript text scroller? ...   PS: Fuck Trump!!!  \u2764 \u2764 \u2764';
 let screenWidth = document.body.clientWidth || 1000;
 let screenHeight = document.body.clientHeight || 800;
 
