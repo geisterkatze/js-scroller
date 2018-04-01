@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ratbrains/scroller.js.git"
+    "url": "git+https://github.com/geisterkatze/js-scroller.git"
   },
   "author": "panicrun",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ratbrains/scroller.js/issues"
+    "url": "https://github.com/geisterkatze/js-scroller.git/issues"
   },
-  "homepage": "https://github.com/ratbrains/scroller.js#readme",
+  "homepage": "https://github.com/geisterkatze/js-scroller.git#readme",
   "devDependencies": {
     "eslint": "^3.17.1",
     "eslint-config-airbnb": "^14.1.0",
